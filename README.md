@@ -43,7 +43,7 @@ with the following steps:
     * You should see a prompt appear that looks like "bootloader :>"
     * Your bootloader is now in CLI mode and ready to execute commands (see below)
 
-MDot and Dragonfly support the following commands:
+mDot, MTQ and MTQN support the following commands:
 ```
 help: display this message
 boot: start user application
@@ -85,4 +85,5 @@ On boot if a file named `fw_upgrade.bin` exists in flash storage the upgrade
 process will begin.  This file can be loaded using the `transfer` or `recv`
 commands.  It can also be created by the application via the FOTA process.
 
-The upgrade binary must only contain the applic
+The upgrade binary must only contain the application firmware (no bootloader). It must also have
+a CRC32 appended to the end of the file.
