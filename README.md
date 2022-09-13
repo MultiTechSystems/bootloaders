@@ -32,16 +32,16 @@ Example:
 
 The bootloader is equipped with a simple command line interface.  It can be accessed
 with the following steps:
-  * Connect your favorite terminal program to the virtual serial port provided
+  1. Connect your favorite terminal program to the virtual serial port provided
       by the USB debug connection between the device and your PC (COMXX on Windows,
       /dev/ttyACMXX on Linux)
-  * Set your terminal program to run at 115200 baud
-  * Reset the device
-  * If using the AT terminal, enter 'm' within 250ms then 't' within 500ms and finally 's' 
+  2. Set your terminal program to run at 115200 baud
+  3. Reset the device
+  4. If using the AT terminal, enter 'm' within 250ms then 't' within 500ms and finally 's' 
 	  within 500ms
-  * If using the debug port, press any key within 250ms
-  * You should see a prompt appear that looks like "bootloader :>"
-  * Your bootloader is now in CLI mode and ready to execute commands (see below)
+  5. If using the debug port, press any key within 250ms
+  6. You should see a prompt appear that looks like "bootloader :>"
+  7. Your bootloader is now in CLI mode and ready to execute commands (see below)
 
 mDot, MTQ and MTQN support the following commands:
 ```
